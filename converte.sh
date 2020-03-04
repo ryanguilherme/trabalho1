@@ -1,7 +1,13 @@
-#!/bin/bash
-unzip imagens-livros.zip
+ #!/bin/bash
+
 cd imagens-livros
-mkdir imagens-png
-convert *.jpg *.png
-mv *.png imagens-png
-zip -r imagens-png.zip imagens-png/
+
+for imagem in *.jpg
+do
+        echo $imagem
+        img_sem_ext=$(ls $imagem | awk -F. '{print $1}')
+        convert $imagem $img_sem_ext.png
+done
+
+cd ..
+

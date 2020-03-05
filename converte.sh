@@ -1,4 +1,8 @@
- #!/bin/bash
+#converte imagens .jpg para .png
+#
+#Autor: Lucas Torres 
+
+#!/bin/bash
 
 cd imagens-livros
 

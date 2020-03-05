@@ -1,5 +1,5 @@
 #converte imagens .jpg para .png
-#
+#alterado por ryan
 #Autor: Lucas Torres 
 
 #!/bin/bash
